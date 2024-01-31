@@ -80,15 +80,12 @@ export default function FriendsResults({
 
   const countVotes = (votes: string[] | undefined) => {
     const votesMap: Map<string, number> = new Map();
-
     if (!votes) {
       return;
     }
-
     votes.forEach((vote) => {
       votesMap.set(vote, (votesMap.get(vote) || 0) + 1);
     });
-
     return votesMap;
   };
 

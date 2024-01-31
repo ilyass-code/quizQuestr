@@ -73,8 +73,8 @@ export default function Results() {
           title: doc.data().title,
           status: doc.data().status,
           createdAt: doc.data().createdAt,
-          quizLink: `http://localhost:3000/friendsQuiz/${doc.id}`,
-          resultLink: `http://localhost:3000/results/friendshipQuiz/${doc.id}`,
+          quizLink: `https://quiz-questr.vercel.app/friendsQuiz/${doc.id}`,
+          resultLink: `https://quiz-questr.vercel.app/results/friendshipQuiz/${doc.id}`,
         };
         setFriendsQuizData((prev) => ({
           quizType: "Friends Quiz",
@@ -88,8 +88,8 @@ export default function Results() {
           title: doc.data().title,
           status: doc.data().status,
           createdAt: doc.data().createdAt,
-          quizLink: `http://localhost:3000/survey/${doc.id}`,
-          resultLink: `http://localhost:3000/results/survey/${doc.id}`,
+          quizLink: `https://quiz-questr.vercel.app/survey/${doc.id}`,
+          resultLink: `https://quiz-questr.vercel.app/results/survey/${doc.id}`,
         };
         setSurveyData((prev) => ({
           quizType: "Surveys",

@@ -18,7 +18,7 @@ export default function FriendsQuizCreation() {
   const [currentValue, setCurrentValue] = useState("");
   const [canSubmit, setCanSubmit] = useState(false);
   const [user, setUser] = useState<User | undefined>(undefined);
-  const baseUrl = "http://localhost:3000/friendsQuiz/";
+  const baseUrl = "https://quiz-questr.vercel.app";
 
   useEffect(() => {
     onAuthStateChanged(auth, (user) => {

@@ -3,7 +3,6 @@ import { GoogleAuthProvider, User, getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 
 const firebaseApiKey = process.env.NEXT_PUBLIC_FIREBASE_API_KEY;
-console.log(firebaseApiKey);
 
 export const firebaseConfig = {
   apiKey: firebaseApiKey,
