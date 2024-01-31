@@ -133,12 +133,15 @@ export default function Results() {
           >
             {(item) => (
               <Tab key={item?.quizType} title={item?.quizType}>
-                {item?.data && (
+                {item?.data?.length && (
                   <div className="grid grid-cols-2 gap-4">
                     {item?.data?.length &&
                       item?.data.map((item) => {
                         return (
-                          <Card className="max-w-[400px] flex m-4" key={item.title}>
+                          <Card
+                            className="max-w-[400px] flex m-4"
+                            key={item.title}
+                          >
                             <CardHeader className="p-4">
                               <Link
                                 className="text-md text-white bold font-bold"
@@ -184,7 +187,9 @@ export default function Results() {
                 )}
                 {!item?.data?.length && (
                   <div className="flex justify-center items-center">
-                    <Card className="text-center text-xl">No surveys yet!</Card>
+                    <Card className="text-center text-xl py-1 px-2 m-2">
+                      No surveys yet!
+                    </Card>
                   </div>
                 )}
               </Tab>

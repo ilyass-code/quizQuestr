@@ -135,6 +135,7 @@ export default function SurveyResults({
                     ],
                   }}
                   options={{
+                    animation: false,
                     responsive: true,
                     plugins: {
                       legend: {
