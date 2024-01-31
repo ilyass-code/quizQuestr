@@ -135,6 +135,7 @@ export default function FriendsResults({
                     ],
                   }}
                   options={{
+                    animation: false,
                     responsive: true,
                     plugins: {
                       legend: {
