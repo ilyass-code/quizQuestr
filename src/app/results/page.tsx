@@ -73,8 +73,8 @@ export default function Results() {
           title: doc.data().title,
           status: doc.data().status,
           createdAt: doc.data().createdAt,
-          quizLink: `https://quiz-questr.vercel.app/friendsQuiz/${doc.id}`,
-          resultLink: `https://quiz-questr.vercel.app/results/friendshipQuiz/${doc.id}`,
+          quizLink: `https://quizquestr.vercel.app/friendsQuiz/${doc.id}`,
+          resultLink: `https://quizquestr.vercel.app/results/friendshipQuiz/${doc.id}`,
         };
         setFriendsQuizData((prev) => ({
           quizType: "Friends Quiz",
@@ -88,8 +88,8 @@ export default function Results() {
           title: doc.data().title,
           status: doc.data().status,
           createdAt: doc.data().createdAt,
-          quizLink: `https://quiz-questr.vercel.app/survey/${doc.id}`,
-          resultLink: `https://quiz-questr.vercel.app/results/survey/${doc.id}`,
+          quizLink: `https://quizquestr.vercel.app/survey/${doc.id}`,
+          resultLink: `https://quizquestr.vercel.app/results/survey/${doc.id}`,
         };
         setSurveyData((prev) => ({
           quizType: "Surveys",
@@ -133,7 +133,7 @@ export default function Results() {
           >
             {(item) => (
               <Tab key={item?.quizType} title={item?.quizType}>
-                {item?.data?.length && (
+                {item?.data && (
                   <div className="grid grid-cols-2 gap-4">
                     {item?.data?.length &&
                       item?.data.map((item) => {

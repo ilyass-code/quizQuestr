@@ -21,7 +21,7 @@ export default function SurveyCreation() {
   });
   const [canSubmit, setCanSubmit] = useState(false);
   const [user, setUser] = useState<User | undefined>(undefined);
-  const baseUrl = "https://quiz-questr.vercel.app/survey/";
+  const baseUrl = "https://quizquestr.vercel.app/survey/";
 
   useEffect(() => {
     onAuthStateChanged(auth, (user) => {
